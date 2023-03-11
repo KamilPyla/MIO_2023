@@ -1,7 +1,7 @@
+import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.linear_model import Perceptron
 from sklearn.metrics import confusion_matrix
-import numpy as np
-import matplotlib.pyplot as plt
 
 x_test = np.concatenate((np.random.normal([0,-1],[1,1],[200,2]), np.random.normal([1,1],[1,1],[200,2])))
 y_test = np.concatenate((np.array([0]*200),np.array([1]*200)))
